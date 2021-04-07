@@ -1,0 +1,22 @@
+﻿<Window x:Class="TysMASTER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TysMASTER"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RichTextBox x:Name="Text_Results" HorizontalAlignment="Left" Height="336" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="BTN_Open_Browser" Content="Open Browser" HorizontalAlignment="Left" Margin="79,351,0,0" VerticalAlignment="Top" Width="135" Height="49" Click="BTN_Open_Browser_Click"/>
+        <Button x:Name="BTN_Scrape" Content="Start Scraping" HorizontalAlignment="Left" Margin="329,351,0,0" VerticalAlignment="Top" Width="142" Height="49" Click="BTN_Scrape_Click"/>
+        <Button x:Name="BTN_EXIT" Content="Exit" HorizontalAlignment="Left" Margin="563,351,0,0" VerticalAlignment="Top" Width="148" Height="49" Click="BTN_EXIT_Click"/>
+
+    </Grid>
+</Window>
